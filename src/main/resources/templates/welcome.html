@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <h1>Welcome Simpi Enter your details Hello</h1>
+<!--    th -= thymeleaf , action - html action , {@} - this is expression language and inside content is the url mapping of the function that will be called -->
+    <form th:action="@{/form}" method="post">
+
+        <p>name</p>
+        <input type="text" name="name">
+        <p>age</p>
+        <input type="text" name="age">
+        <button type="submit">Submit</button>
+<!--        String name = requestParameter("name");-->
+    </form>
 </body>
 </html>
